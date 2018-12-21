@@ -1,0 +1,347 @@
+[I 181221 16:48:10 application:204] 127.0.0.1 None GET /vue 2.00ms 2018-12-21 15:48:10
+2018-12-21 16:48:10,432 - tornado.application - ERROR - vue_index.tmpl code:
+ 1  def _tt_execute():  # base.sui:0
+ 2      _tt_buffer = []  # base.sui:0
+ 3      _tt_append = _tt_buffer.append  # base.sui:0
+ 4      import config as cfg  # base.sui:1
+ 5      _tt_append(b' \r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n  <!-- Standard Meta -->\r\n  <meta charset="utf-8" />\r\n  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">\r\n\r\n  <!-- Site Properties -->\r\n    <title>Welcome to PythonOnWheels.</title>\r\n    <link rel="stylesheet" href="')  # base.sui:12
+ 6      _tt_tmp = static_url("css/semantic.css")  # base.sui:12
+ 7      if isinstance(_tt_tmp, _tt_string_types): _tt_tmp = _tt_utf8(_tt_tmp)  # base.sui:12
+ 8      else: _tt_tmp = _tt_utf8(str(_tt_tmp))  # base.sui:12
+ 9      _tt_tmp = _tt_utf8(xhtml_escape(_tt_tmp))  # base.sui:12
+10      _tt_append(_tt_tmp)  # base.sui:12
+11      _tt_append(b'" />\r\n    <link rel=\'stylesheet prefetch\' href=\'https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css\'>\r\n    <script src="')  # base.sui:14
+12      _tt_tmp = static_url("js/jquery.min.js")  # base.sui:14
+13      if isinstance(_tt_tmp, _tt_string_types): _tt_tmp = _tt_utf8(_tt_tmp)  # base.sui:14
+14      else: _tt_tmp = _tt_utf8(str(_tt_tmp))  # base.sui:14
+15      _tt_tmp = _tt_utf8(xhtml_escape(_tt_tmp))  # base.sui:14
+16      _tt_append(_tt_tmp)  # base.sui:14
+17      _tt_append(b'"></script>\r\n    <script src="')  # base.sui:15
+18      _tt_tmp = static_url("js/semantic.js")  # base.sui:15
+19      if isinstance(_tt_tmp, _tt_string_types): _tt_tmp = _tt_utf8(_tt_tmp)  # base.sui:15
+20      else: _tt_tmp = _tt_utf8(str(_tt_tmp))  # base.sui:15
+21      _tt_tmp = _tt_utf8(xhtml_escape(_tt_tmp))  # base.sui:15
+22      _tt_append(_tt_tmp)  # base.sui:15
+23      _tt_append(b'"></script>\r\n  <style type="text/css">\r\n  body {\r\n      background-color: #FFFFFF;\r\n    }\r\n    .ui.menu .item img.logo {\r\n      margin-right: 1.5em;\r\n    }\r\n    .main.container {\r\n      margin-top: 7em;\r\n    }\r\n    .wireframe {\r\n      margin-top: 2em;\r\n  }\r\n  .ui.footer.segment {\r\n    margin: 5em 0em 0em;\r\n    padding: 5em 0em;\r\n  }\r\n</style>\r\n    ')  # base.sui:34
+24      _tt_append(b'\r\n\r\n')  # vue_index.tmpl:5 (via base.sui:34)
+25      _tt_append(b'\r\n    ')  # base.sui:36
+26      _tt_append(b'\r\n    ')  # base.sui:37 (via base.sui:36)
+27      _tt_append(b'\r\n\r\n    ')  # base.sui:39
+28      _tt_append(b'\r\n    <script src="')  # vue_index.tmpl:8 (via base.sui:39)
+29      _tt_tmp = static_url("js/vue_mains.js)"  # vue_index.tmpl:8 (via base.sui:39)
+30      if isinstance(_tt_tmp, _tt_string_types): _tt_tmp = _tt_utf8(_tt_tmp)  # vue_index.tmpl:8 (via base.sui:39)
+31      else: _tt_tmp = _tt_utf8(str(_tt_tmp))  # vue_index.tmpl:8 (via base.sui:39)
+32      _tt_tmp = _tt_utf8(xhtml_escape(_tt_tmp))  # vue_index.tmpl:8 (via base.sui:39)
+33      _tt_append(_tt_tmp)  # vue_index.tmpl:8 (via base.sui:39)
+34      _tt_append(b'"></script>\r\n')  # vue_index.tmpl:9 (via base.sui:39)
+35      _tt_append(b'\r\n\r\n    \r\n    <script>\r\n    $(document).ready(function(){  \r\n      if (typeof docready === "function") { \r\n         docready();\r\n      }\r\n      ')  # base.sui:48
+36      _tt_append(b'\r\n\r\n')  # vue_index.tmpl:14 (via base.sui:48)
+37      _tt_append(b'\r\n    });\r\n\r\n    ')  # base.sui:53
+38      _tt_append(b'\r\n\r\n')  # vue_index.tmpl:18 (via base.sui:53)
+39      _tt_append(b'\r\n    </script>\r\n    \r\n</head>\r\n<body>\r\n\r\n  <div class="ui stackable fixed inverted menu">\r\n    <div class="ui container">\r\n      <a href="/" class="header item">\r\n        <img class="logo" src="')  # base.sui:64
+40      _tt_tmp = static_url("images/pow_logo_128.png")  # base.sui:64
+41      if isinstance(_tt_tmp, _tt_string_types): _tt_tmp = _tt_utf8(_tt_tmp)  # base.sui:64
+42      else: _tt_tmp = _tt_utf8(str(_tt_tmp))  # base.sui:64
+43      _tt_tmp = _tt_utf8(xhtml_escape(_tt_tmp))  # base.sui:64
+44      _tt_append(_tt_tmp)  # base.sui:64
+45      _tt_append(b'">\r\n        PythonOnWheels\r\n      </a>\r\n      <a href="http://www.pythononwheels.org/getting_started" class="item">Geting started</a>\r\n      <a href="http://www.pythononwheels.org/documentation" class="item">documentation</a>\r\n    </div>\r\n  </div>\r\n\r\n  <div class="ui main container">\r\n    ')  # base.sui:73
+46      _tt_append(b' \r\n<!-- Conflict on template of Tornado and Vue -->\r\n<!-- See: https://stackoverflow.com/questions/51738763/conflict-on-template-of-tornado-and-vue -->\r\n<div id="app">\r\n    <h1>')  # vue_index.tmpl:25 (via base.sui:73)
+47      _tt_append(b'{{')  # vue_index.tmpl:25 (via base.sui:73)
+48      _tt_append(b'product}}</h1>\r\n    <h2>[[product]]</h2>\r\n</div>\r\n\r\n')  # vue_index.tmpl:29 (via base.sui:73)
+49      _tt_append(b'\r\n  </div>\r\n\r\n  <div class="ui center aligned  vertical footer segment">\r\n      <div class="ui section divider"></div>\r\n      <a href="http://www.pythononwheels.org">\r\n        <span class="ui centered"><img src="/static/images/pow_logo_128.png" class="ui centered mini image">powered by pythononwheels</span>\r\n      </a>\r\n  </div>\r\n</body>\r\n\r\n</html>\r\n')  # base.sui:86
+50      return _tt_utf8('').join(_tt_buffer)  # base.sui:0
+[E 181221 16:48:10 template:320] vue_index.tmpl code:
+     1  def _tt_execute():  # base.sui:0
+     2      _tt_buffer = []  # base.sui:0
+     3      _tt_append = _tt_buffer.append  # base.sui:0
+     4      import config as cfg  # base.sui:1
+     5      _tt_append(b' \r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n  <!-- Standard Meta -->\r\n  <meta charset="utf-8" />\r\n  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">\r\n\r\n  <!-- Site Properties -->\r\n    <title>Welcome to PythonOnWheels.</title>\r\n    <link rel="stylesheet" href="')  # base.sui:12
+     6      _tt_tmp = static_url("css/semantic.css")  # base.sui:12
+     7      if isinstance(_tt_tmp, _tt_string_types): _tt_tmp = _tt_utf8(_tt_tmp)  # base.sui:12
+     8      else: _tt_tmp = _tt_utf8(str(_tt_tmp))  # base.sui:12
+     9      _tt_tmp = _tt_utf8(xhtml_escape(_tt_tmp))  # base.sui:12
+    10      _tt_append(_tt_tmp)  # base.sui:12
+    11      _tt_append(b'" />\r\n    <link rel=\'stylesheet prefetch\' href=\'https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css\'>\r\n    <script src="')  # base.sui:14
+    12      _tt_tmp = static_url("js/jquery.min.js")  # base.sui:14
+    13      if isinstance(_tt_tmp, _tt_string_types): _tt_tmp = _tt_utf8(_tt_tmp)  # base.sui:14
+    14      else: _tt_tmp = _tt_utf8(str(_tt_tmp))  # base.sui:14
+    15      _tt_tmp = _tt_utf8(xhtml_escape(_tt_tmp))  # base.sui:14
+    16      _tt_append(_tt_tmp)  # base.sui:14
+    17      _tt_append(b'"></script>\r\n    <script src="')  # base.sui:15
+    18      _tt_tmp = static_url("js/semantic.js")  # base.sui:15
+    19      if isinstance(_tt_tmp, _tt_string_types): _tt_tmp = _tt_utf8(_tt_tmp)  # base.sui:15
+    20      else: _tt_tmp = _tt_utf8(str(_tt_tmp))  # base.sui:15
+    21      _tt_tmp = _tt_utf8(xhtml_escape(_tt_tmp))  # base.sui:15
+    22      _tt_append(_tt_tmp)  # base.sui:15
+    23      _tt_append(b'"></script>\r\n  <style type="text/css">\r\n  body {\r\n      background-color: #FFFFFF;\r\n    }\r\n    .ui.menu .item img.logo {\r\n      margin-right: 1.5em;\r\n    }\r\n    .main.container {\r\n      margin-top: 7em;\r\n    }\r\n    .wireframe {\r\n      margin-top: 2em;\r\n  }\r\n  .ui.footer.segment {\r\n    margin: 5em 0em 0em;\r\n    padding: 5em 0em;\r\n  }\r\n</style>\r\n    ')  # base.sui:34
+    24      _tt_append(b'\r\n\r\n')  # vue_index.tmpl:5 (via base.sui:34)
+    25      _tt_append(b'\r\n    ')  # base.sui:36
+    26      _tt_append(b'\r\n    ')  # base.sui:37 (via base.sui:36)
+    27      _tt_append(b'\r\n\r\n    ')  # base.sui:39
+    28      _tt_append(b'\r\n    <script src="')  # vue_index.tmpl:8 (via base.sui:39)
+    29      _tt_tmp = static_url("js/vue_mains.js)"  # vue_index.tmpl:8 (via base.sui:39)
+    30      if isinstance(_tt_tmp, _tt_string_types): _tt_tmp = _tt_utf8(_tt_tmp)  # vue_index.tmpl:8 (via base.sui:39)
+    31      else: _tt_tmp = _tt_utf8(str(_tt_tmp))  # vue_index.tmpl:8 (via base.sui:39)
+    32      _tt_tmp = _tt_utf8(xhtml_escape(_tt_tmp))  # vue_index.tmpl:8 (via base.sui:39)
+    33      _tt_append(_tt_tmp)  # vue_index.tmpl:8 (via base.sui:39)
+    34      _tt_append(b'"></script>\r\n')  # vue_index.tmpl:9 (via base.sui:39)
+    35      _tt_append(b'\r\n\r\n    \r\n    <script>\r\n    $(document).ready(function(){  \r\n      if (typeof docready === "function") { \r\n         docready();\r\n      }\r\n      ')  # base.sui:48
+    36      _tt_append(b'\r\n\r\n')  # vue_index.tmpl:14 (via base.sui:48)
+    37      _tt_append(b'\r\n    });\r\n\r\n    ')  # base.sui:53
+    38      _tt_append(b'\r\n\r\n')  # vue_index.tmpl:18 (via base.sui:53)
+    39      _tt_append(b'\r\n    </script>\r\n    \r\n</head>\r\n<body>\r\n\r\n  <div class="ui stackable fixed inverted menu">\r\n    <div class="ui container">\r\n      <a href="/" class="header item">\r\n        <img class="logo" src="')  # base.sui:64
+    40      _tt_tmp = static_url("images/pow_logo_128.png")  # base.sui:64
+    41      if isinstance(_tt_tmp, _tt_string_types): _tt_tmp = _tt_utf8(_tt_tmp)  # base.sui:64
+    42      else: _tt_tmp = _tt_utf8(str(_tt_tmp))  # base.sui:64
+    43      _tt_tmp = _tt_utf8(xhtml_escape(_tt_tmp))  # base.sui:64
+    44      _tt_append(_tt_tmp)  # base.sui:64
+    45      _tt_append(b'">\r\n        PythonOnWheels\r\n      </a>\r\n      <a href="http://www.pythononwheels.org/getting_started" class="item">Geting started</a>\r\n      <a href="http://www.pythononwheels.org/documentation" class="item">documentation</a>\r\n    </div>\r\n  </div>\r\n\r\n  <div class="ui main container">\r\n    ')  # base.sui:73
+    46      _tt_append(b' \r\n<!-- Conflict on template of Tornado and Vue -->\r\n<!-- See: https://stackoverflow.com/questions/51738763/conflict-on-template-of-tornado-and-vue -->\r\n<div id="app">\r\n    <h1>')  # vue_index.tmpl:25 (via base.sui:73)
+    47      _tt_append(b'{{')  # vue_index.tmpl:25 (via base.sui:73)
+    48      _tt_append(b'product}}</h1>\r\n    <h2>[[product]]</h2>\r\n</div>\r\n\r\n')  # vue_index.tmpl:29 (via base.sui:73)
+    49      _tt_append(b'\r\n  </div>\r\n\r\n  <div class="ui center aligned  vertical footer segment">\r\n      <div class="ui section divider"></div>\r\n      <a href="http://www.pythononwheels.org">\r\n        <span class="ui centered"><img src="/static/images/pow_logo_128.png" class="ui centered mini image">powered by pythononwheels</span>\r\n      </a>\r\n  </div>\r\n</body>\r\n\r\n</html>\r\n')  # base.sui:86
+    50      return _tt_utf8('').join(_tt_buffer)  # base.sui:0
+2018-12-21 16:48:10,432 - tornado.application - ERROR - Uncaught exception GET /vue (127.0.0.1)
+HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/vue', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Host': 'localhost:8080', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'de,en-US;q=0.7,en;q=0.3', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "c:\khz\devel\pow_vue\handlers\base.py", line 164, in get
+    return f(*args, **params)
+  File "c:\khz\devel\pow_vue\handlers\shorties.py", line 37, in index
+    self.render("vue_index.tmpl")
+  File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 719, in render
+    html = self.render_string(template_name, **kwargs)
+  File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 823, in render_string
+    t = loader.load(template_name)
+  File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\template.py", line 427, in load
+    self.templates[name] = self._create_template(name)
+  File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\template.py", line 455, in _create_template
+    template = Template(f.read(), name=name, loader=self)
+  File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\template.py", line 317, in __init__
+    "exec", dont_inherit=True)
+  File "vue_index_tmpl.generated.py", line 30
+    if isinstance(_tt_tmp, _tt_string_types): _tt_tmp = _tt_utf8(_tt_tmp)  # vue_index.tmpl:8 (via base.sui:39)
+                                            ^
+SyntaxError: invalid syntax
+[E 181221 16:48:10 web:1548] Uncaught exception GET /vue (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/vue', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Host': 'localhost:8080', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Language': 'de,en-US;q=0.7,en;q=0.3', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "c:\khz\devel\pow_vue\handlers\base.py", line 164, in get
+        return f(*args, **params)
+      File "c:\khz\devel\pow_vue\handlers\shorties.py", line 37, in index
+        self.render("vue_index.tmpl")
+      File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 719, in render
+        html = self.render_string(template_name, **kwargs)
+      File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 823, in render_string
+        t = loader.load(template_name)
+      File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\template.py", line 427, in load
+        self.templates[name] = self._create_template(name)
+      File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\template.py", line 455, in _create_template
+        template = Template(f.read(), name=name, loader=self)
+      File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\template.py", line 317, in __init__
+        "exec", dont_inherit=True)
+      File "vue_index_tmpl.generated.py", line 30
+        if isinstance(_tt_tmp, _tt_string_types): _tt_tmp = _tt_utf8(_tt_tmp)  # vue_index.tmpl:8 (via base.sui:39)
+                                                ^
+    SyntaxError: invalid syntax
+2018-12-21 16:48:10,546 - tornado.application - ERROR - Uncaught exception in write_error
+Traceback (most recent call last):
+  File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 1467, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "c:\khz\devel\pow_vue\handlers\base.py", line 164, in get
+    return f(*args, **params)
+  File "c:\khz\devel\pow_vue\handlers\shorties.py", line 37, in index
+    self.render("vue_index.tmpl")
+  File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 719, in render
+    html = self.render_string(template_name, **kwargs)
+  File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 823, in render_string
+    t = loader.load(template_name)
+  File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\template.py", line 427, in load
+    self.templates[name] = self._create_template(name)
+  File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\template.py", line 455, in _create_template
+    template = Template(f.read(), name=name, loader=self)
+  File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\template.py", line 317, in __init__
+    "exec", dont_inherit=True)
+  File "vue_index_tmpl.generated.py", line 30
+    if isinstance(_tt_tmp, _tt_string_types): _tt_tmp = _tt_utf8(_tt_tmp)  # vue_index.tmpl:8 (via base.sui:39)
+                                            ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 994, in send_error
+    self.write_error(status_code, **kwargs)
+  File "c:\khz\devel\pow_vue\handlers\base.py", line 556, in write_error
+    return self.render("404.tmpl")
+  File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 719, in render
+    html = self.render_string(template_name, **kwargs)
+  File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 826, in render_string
+    return t.generate(**namespace)
+  File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\template.py", line 348, in generate
+    return execute()
+  File "404_tmpl.generated.py", line 47, in _tt_execute
+    _tt_tmp = status  # 404.tmpl:23 (via base.sui:73)
+NameError: name 'status' is not defined
+[E 181221 16:48:10 web:996] Uncaught exception in write_error
+    Traceback (most recent call last):
+      File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 1467, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "c:\khz\devel\pow_vue\handlers\base.py", line 164, in get
+        return f(*args, **params)
+      File "c:\khz\devel\pow_vue\handlers\shorties.py", line 37, in index
+        self.render("vue_index.tmpl")
+      File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 719, in render
+        html = self.render_string(template_name, **kwargs)
+      File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 823, in render_string
+        t = loader.load(template_name)
+      File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\template.py", line 427, in load
+        self.templates[name] = self._create_template(name)
+      File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\template.py", line 455, in _create_template
+        template = Template(f.read(), name=name, loader=self)
+      File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\template.py", line 317, in __init__
+        "exec", dont_inherit=True)
+      File "vue_index_tmpl.generated.py", line 30
+        if isinstance(_tt_tmp, _tt_string_types): _tt_tmp = _tt_utf8(_tt_tmp)  # vue_index.tmpl:8 (via base.sui:39)
+                                                ^
+    SyntaxError: invalid syntax
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 994, in send_error
+        self.write_error(status_code, **kwargs)
+      File "c:\khz\devel\pow_vue\handlers\base.py", line 556, in write_error
+        return self.render("404.tmpl")
+      File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 719, in render
+        html = self.render_string(template_name, **kwargs)
+      File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\web.py", line 826, in render_string
+        return t.generate(**namespace)
+      File "C:\Users\swbzwec\.virtualenvs\pow_vue-hUxxFLlf\lib\site-packages\tornado\template.py", line 348, in generate
+        return execute()
+      File "404_tmpl.generated.py", line 47, in _tt_execute
+        _tt_tmp = status  # 404.tmpl:23 (via base.sui:73)
+    NameError: name 'status' is not defined
+2018-12-21 16:48:10,546 - tornado.access - ERROR - 127.0.0.1 500 GET /vue (127.0.0.1) 164.78ms 2018-12-21 15:48:10
+[E 181221 16:48:10 application:140] 127.0.0.1 500 GET /vue (127.0.0.1) 164.78ms 2018-12-21 15:48:10
+2018-12-21 16:48:10,646 - tornado.access - WARNING - 127.0.0.1 404 GET /favicon.ico (127.0.0.1) 31.25ms 2018-12-21 15:48:10
+[W 181221 16:48:10 application:140] 127.0.0.1 404 GET /favicon.ico (127.0.0.1) 31.25ms 2018-12-21 15:48:10
+[I 181221 16:49:50 application:204] 127.0.0.1 None GET /vue 15.62ms 2018-12-21 15:49:50
+2018-12-21 16:49:50,893 - tornado.general - ERROR - Could not open static file 'c:\\khz\\devel\\pow_vue\\static\\js\\vue_mains.js'
+[E 181221 16:49:50 web:2678] Could not open static file 'c:\\khz\\devel\\pow_vue\\static\\js\\vue_mains.js'
+2018-12-21 16:49:50,895 - tornado.access - INFO - 127.0.0.1 200 GET /vue (127.0.0.1) 57.45ms 2018-12-21 15:49:50
+[I 181221 16:49:50 application:140] 127.0.0.1 200 GET /vue (127.0.0.1) 57.45ms 2018-12-21 15:49:50
+2018-12-21 16:49:51,314 - tornado.access - INFO - 127.0.0.1 200 GET /static/js/jquery.min.js?v=8718a315f515e7152aa01dcf9bd2a4ac (127.0.0.1) 353.42ms 2018-12-21 15:49:51
+[I 181221 16:49:51 application:140] 127.0.0.1 200 GET /static/js/jquery.min.js?v=8718a315f515e7152aa01dcf9bd2a4ac (127.0.0.1) 353.42ms 2018-12-21 15:49:51
+2018-12-21 16:49:51,346 - tornado.access - INFO - 127.0.0.1 200 GET /static/js/semantic.js?v=d186458c18fd05c97241c788f4dc831a (127.0.0.1) 31.25ms 2018-12-21 15:49:51
+[I 181221 16:49:51 application:140] 127.0.0.1 200 GET /static/js/semantic.js?v=d186458c18fd05c97241c788f4dc831a (127.0.0.1) 31.25ms 2018-12-21 15:49:51
+2018-12-21 16:49:51,346 - tornado.access - WARNING - 127.0.0.1 404 GET /static/js/vue_mains.js (127.0.0.1) 0.00ms 2018-12-21 15:49:51
+[W 181221 16:49:51 application:140] 127.0.0.1 404 GET /static/js/vue_mains.js (127.0.0.1) 0.00ms 2018-12-21 15:49:51
+2018-12-21 16:49:51,361 - tornado.access - INFO - 127.0.0.1 200 GET /static/css/semantic.css?v=89891814f6cd49709dd18aedab380de3 (127.0.0.1) 15.63ms 2018-12-21 15:49:51
+[I 181221 16:49:51 application:140] 127.0.0.1 200 GET /static/css/semantic.css?v=89891814f6cd49709dd18aedab380de3 (127.0.0.1) 15.63ms 2018-12-21 15:49:51
+2018-12-21 16:49:51,381 - tornado.access - INFO - 127.0.0.1 200 GET /static/images/pow_logo_128.png (127.0.0.1) 19.64ms 2018-12-21 15:49:51
+[I 181221 16:49:51 application:140] 127.0.0.1 200 GET /static/images/pow_logo_128.png (127.0.0.1) 19.64ms 2018-12-21 15:49:51
+2018-12-21 16:49:51,383 - tornado.access - INFO - 127.0.0.1 200 GET /static/images/pow_logo_128.png?v=c8b9061b1bd47836443e2dcf71f9bd22 (127.0.0.1) 0.00ms 2018-12-21 15:49:51
+[I 181221 16:49:51 application:140] 127.0.0.1 200 GET /static/images/pow_logo_128.png?v=c8b9061b1bd47836443e2dcf71f9bd22 (127.0.0.1) 0.00ms 2018-12-21 15:49:51
+2018-12-21 16:49:51,531 - tornado.access - WARNING - 127.0.0.1 404 GET /static/js/vue_mains.js (127.0.0.1) 0.00ms 2018-12-21 15:49:51
+[W 181221 16:49:51 application:140] 127.0.0.1 404 GET /static/js/vue_mains.js (127.0.0.1) 0.00ms 2018-12-21 15:49:51
+[I 181221 16:51:06 application:204] 127.0.0.1 None GET /vue 0.00ms 2018-12-21 15:51:06
+2018-12-21 16:51:06,997 - tornado.general - ERROR - Could not open static file 'c:\\khz\\devel\\pow_vue\\static\\js\\vue_mains.js'
+[E 181221 16:51:06 web:2678] Could not open static file 'c:\\khz\\devel\\pow_vue\\static\\js\\vue_mains.js'
+2018-12-21 16:51:06,997 - tornado.access - INFO - 127.0.0.1 200 GET /vue (127.0.0.1) 37.75ms 2018-12-21 15:51:06
+[I 181221 16:51:06 application:140] 127.0.0.1 200 GET /vue (127.0.0.1) 37.75ms 2018-12-21 15:51:06
+2018-12-21 16:51:07,045 - tornado.access - INFO - 127.0.0.1 304 GET /static/js/jquery.min.js?v=8718a315f515e7152aa01dcf9bd2a4ac (127.0.0.1) 0.00ms 2018-12-21 15:51:07
+[I 181221 16:51:07 application:140] 127.0.0.1 304 GET /static/js/jquery.min.js?v=8718a315f515e7152aa01dcf9bd2a4ac (127.0.0.1) 0.00ms 2018-12-21 15:51:07
+2018-12-21 16:51:07,058 - tornado.access - WARNING - 127.0.0.1 404 GET /static/js/vue_mains.js (127.0.0.1) 13.67ms 2018-12-21 15:51:07
+[W 181221 16:51:07 application:140] 127.0.0.1 404 GET /static/js/vue_mains.js (127.0.0.1) 13.67ms 2018-12-21 15:51:07
+2018-12-21 16:51:07,061 - tornado.access - INFO - 127.0.0.1 304 GET /static/js/semantic.js?v=d186458c18fd05c97241c788f4dc831a (127.0.0.1) 2.01ms 2018-12-21 15:51:07
+[I 181221 16:51:07 application:140] 127.0.0.1 304 GET /static/js/semantic.js?v=d186458c18fd05c97241c788f4dc831a (127.0.0.1) 2.01ms 2018-12-21 15:51:07
+2018-12-21 16:51:07,061 - tornado.access - INFO - 127.0.0.1 304 GET /static/css/semantic.css?v=89891814f6cd49709dd18aedab380de3 (127.0.0.1) 0.00ms 2018-12-21 15:51:07
+[I 181221 16:51:07 application:140] 127.0.0.1 304 GET /static/css/semantic.css?v=89891814f6cd49709dd18aedab380de3 (127.0.0.1) 0.00ms 2018-12-21 15:51:07
+2018-12-21 16:51:07,282 - tornado.access - WARNING - 127.0.0.1 404 GET /static/js/vue_mains.js (127.0.0.1) 0.00ms 2018-12-21 15:51:07
+[W 181221 16:51:07 application:140] 127.0.0.1 404 GET /static/js/vue_mains.js (127.0.0.1) 0.00ms 2018-12-21 15:51:07
+2018-12-21 16:51:07,329 - tornado.access - INFO - 127.0.0.1 200 GET /static/images/pow_logo_128.png?v=c8b9061b1bd47836443e2dcf71f9bd22 (127.0.0.1) 0.00ms 2018-12-21 15:51:07
+[I 181221 16:51:07 application:140] 127.0.0.1 200 GET /static/images/pow_logo_128.png?v=c8b9061b1bd47836443e2dcf71f9bd22 (127.0.0.1) 0.00ms 2018-12-21 15:51:07
+2018-12-21 16:51:07,329 - tornado.access - INFO - 127.0.0.1 200 GET /static/images/pow_logo_128.png (127.0.0.1) 0.00ms 2018-12-21 15:51:07
+[I 181221 16:51:07 application:140] 127.0.0.1 200 GET /static/images/pow_logo_128.png (127.0.0.1) 0.00ms 2018-12-21 15:51:07
+2018-12-21 16:51:07,445 - tornado.access - WARNING - 127.0.0.1 404 GET /favicon.ico (127.0.0.1) 0.00ms 2018-12-21 15:51:07
+[W 181221 16:51:07 application:140] 127.0.0.1 404 GET /favicon.ico (127.0.0.1) 0.00ms 2018-12-21 15:51:07
+2018-12-21 16:51:12,659 - tornado.access - INFO - 127.0.0.1 200 GET /static/css/semantic.css?v=89891814f6cd49709dd18aedab380de3 (127.0.0.1) 15.63ms 2018-12-21 15:51:12
+[I 181221 16:51:12 application:140] 127.0.0.1 200 GET /static/css/semantic.css?v=89891814f6cd49709dd18aedab380de3 (127.0.0.1) 15.63ms 2018-12-21 15:51:12
+2018-12-21 16:51:12,659 - tornado.access - INFO - 127.0.0.1 200 GET /static/css/semantic.css?v=89891814f6cd49709dd18aedab380de3 (127.0.0.1) 0.00ms 2018-12-21 15:51:12
+[I 181221 16:51:12 application:140] 127.0.0.1 200 GET /static/css/semantic.css?v=89891814f6cd49709dd18aedab380de3 (127.0.0.1) 0.00ms 2018-12-21 15:51:12
+[I 181221 16:51:35 application:204] 127.0.0.1 None GET /vue 0.00ms 2018-12-21 15:51:35
+2018-12-21 16:51:35,575 - tornado.general - ERROR - Could not open static file 'c:\\khz\\devel\\pow_vue\\static\\js\\vue_mains.js'
+[E 181221 16:51:35 web:2678] Could not open static file 'c:\\khz\\devel\\pow_vue\\static\\js\\vue_mains.js'
+2018-12-21 16:51:35,575 - tornado.access - INFO - 127.0.0.1 200 GET /vue (127.0.0.1) 36.49ms 2018-12-21 15:51:35
+[I 181221 16:51:35 application:140] 127.0.0.1 200 GET /vue (127.0.0.1) 36.49ms 2018-12-21 15:51:35
+2018-12-21 16:51:35,771 - tornado.access - INFO - 127.0.0.1 200 GET /static/css/semantic.css?v=89891814f6cd49709dd18aedab380de3 (127.0.0.1) 15.62ms 2018-12-21 15:51:35
+[I 181221 16:51:35 application:140] 127.0.0.1 200 GET /static/css/semantic.css?v=89891814f6cd49709dd18aedab380de3 (127.0.0.1) 15.62ms 2018-12-21 15:51:35
+2018-12-21 16:51:35,787 - tornado.access - WARNING - 127.0.0.1 404 GET /static/js/vue_mains.js (127.0.0.1) 0.00ms 2018-12-21 15:51:35
+[W 181221 16:51:35 application:140] 127.0.0.1 404 GET /static/js/vue_mains.js (127.0.0.1) 0.00ms 2018-12-21 15:51:35
+2018-12-21 16:51:35,787 - tornado.access - INFO - 127.0.0.1 200 GET /static/js/jquery.min.js?v=8718a315f515e7152aa01dcf9bd2a4ac (127.0.0.1) 0.00ms 2018-12-21 15:51:35
+[I 181221 16:51:35 application:140] 127.0.0.1 200 GET /static/js/jquery.min.js?v=8718a315f515e7152aa01dcf9bd2a4ac (127.0.0.1) 0.00ms 2018-12-21 15:51:35
+2018-12-21 16:51:35,808 - tornado.access - INFO - 127.0.0.1 200 GET /static/js/semantic.js?v=d186458c18fd05c97241c788f4dc831a (127.0.0.1) 5.50ms 2018-12-21 15:51:35
+[I 181221 16:51:35 application:140] 127.0.0.1 200 GET /static/js/semantic.js?v=d186458c18fd05c97241c788f4dc831a (127.0.0.1) 5.50ms 2018-12-21 15:51:35
+2018-12-21 16:51:36,055 - tornado.access - WARNING - 127.0.0.1 404 GET /static/js/vue_mains.js (127.0.0.1) 0.00ms 2018-12-21 15:51:36
+[W 181221 16:51:36 application:140] 127.0.0.1 404 GET /static/js/vue_mains.js (127.0.0.1) 0.00ms 2018-12-21 15:51:36
+2018-12-21 16:51:36,181 - tornado.access - INFO - 127.0.0.1 200 GET /static/images/pow_logo_128.png?v=c8b9061b1bd47836443e2dcf71f9bd22 (127.0.0.1) 0.00ms 2018-12-21 15:51:36
+[I 181221 16:51:36 application:140] 127.0.0.1 200 GET /static/images/pow_logo_128.png?v=c8b9061b1bd47836443e2dcf71f9bd22 (127.0.0.1) 0.00ms 2018-12-21 15:51:36
+2018-12-21 16:51:36,199 - tornado.access - INFO - 127.0.0.1 200 GET /static/images/pow_logo_128.png (127.0.0.1) 2.50ms 2018-12-21 15:51:36
+[I 181221 16:51:36 application:140] 127.0.0.1 200 GET /static/images/pow_logo_128.png (127.0.0.1) 2.50ms 2018-12-21 15:51:36
+2018-12-21 16:51:36,776 - tornado.access - WARNING - 127.0.0.1 404 GET /favicon.ico (127.0.0.1) 0.00ms 2018-12-21 15:51:36
+[W 181221 16:51:36 application:140] 127.0.0.1 404 GET /favicon.ico (127.0.0.1) 0.00ms 2018-12-21 15:51:36
+[I 181221 16:51:50 application:204] 127.0.0.1 None GET /vue 8.39ms 2018-12-21 15:51:50
+2018-12-21 16:51:50,945 - tornado.access - INFO - 127.0.0.1 200 GET /vue (127.0.0.1) 57.71ms 2018-12-21 15:51:50
+[I 181221 16:51:50 application:140] 127.0.0.1 200 GET /vue (127.0.0.1) 57.71ms 2018-12-21 15:51:50
+2018-12-21 16:51:51,094 - tornado.access - INFO - 127.0.0.1 200 GET /static/css/semantic.css?v=89891814f6cd49709dd18aedab380de3 (127.0.0.1) 15.63ms 2018-12-21 15:51:51
+[I 181221 16:51:51 application:140] 127.0.0.1 200 GET /static/css/semantic.css?v=89891814f6cd49709dd18aedab380de3 (127.0.0.1) 15.63ms 2018-12-21 15:51:51
+2018-12-21 16:51:51,094 - tornado.access - INFO - 127.0.0.1 200 GET /static/js/jquery.min.js?v=8718a315f515e7152aa01dcf9bd2a4ac (127.0.0.1) 0.00ms 2018-12-21 15:51:51
+[I 181221 16:51:51 application:140] 127.0.0.1 200 GET /static/js/jquery.min.js?v=8718a315f515e7152aa01dcf9bd2a4ac (127.0.0.1) 0.00ms 2018-12-21 15:51:51
+2018-12-21 16:51:51,094 - tornado.access - INFO - 127.0.0.1 200 GET /static/js/vue_main.js?v=cbe7f544c6b8235b0dc5d47587cd276c (127.0.0.1) 0.00ms 2018-12-21 15:51:51
+[I 181221 16:51:51 application:140] 127.0.0.1 200 GET /static/js/vue_main.js?v=cbe7f544c6b8235b0dc5d47587cd276c (127.0.0.1) 0.00ms 2018-12-21 15:51:51
+2018-12-21 16:51:51,117 - tornado.access - INFO - 127.0.0.1 200 GET /static/js/semantic.js?v=d186458c18fd05c97241c788f4dc831a (127.0.0.1) 22.15ms 2018-12-21 15:51:51
+[I 181221 16:51:51 application:140] 127.0.0.1 200 GET /static/js/semantic.js?v=d186458c18fd05c97241c788f4dc831a (127.0.0.1) 22.15ms 2018-12-21 15:51:51
+2018-12-21 16:51:51,440 - tornado.access - INFO - 127.0.0.1 200 GET /static/images/pow_logo_128.png?v=c8b9061b1bd47836443e2dcf71f9bd22 (127.0.0.1) 0.00ms 2018-12-21 15:51:51
+[I 181221 16:51:51 application:140] 127.0.0.1 200 GET /static/images/pow_logo_128.png?v=c8b9061b1bd47836443e2dcf71f9bd22 (127.0.0.1) 0.00ms 2018-12-21 15:51:51
+2018-12-21 16:51:51,551 - tornado.access - INFO - 127.0.0.1 200 GET /static/images/pow_logo_128.png (127.0.0.1) 0.00ms 2018-12-21 15:51:51
+[I 181221 16:51:51 application:140] 127.0.0.1 200 GET /static/images/pow_logo_128.png (127.0.0.1) 0.00ms 2018-12-21 15:51:51
+2018-12-21 16:51:51,641 - tornado.access - WARNING - 127.0.0.1 404 GET /favicon.ico (127.0.0.1) 15.64ms 2018-12-21 15:51:51
+[W 181221 16:51:51 application:140] 127.0.0.1 404 GET /favicon.ico (127.0.0.1) 15.64ms 2018-12-21 15:51:51
+[I 181221 16:52:58 application:204] 127.0.0.1 None GET /vue 0.00ms 2018-12-21 15:52:58
+2018-12-21 16:52:58,928 - tornado.access - INFO - 127.0.0.1 200 GET /vue (127.0.0.1) 46.88ms 2018-12-21 15:52:58
+[I 181221 16:52:58 application:140] 127.0.0.1 200 GET /vue (127.0.0.1) 46.88ms 2018-12-21 15:52:58
+2018-12-21 16:52:59,043 - tornado.access - INFO - 127.0.0.1 200 GET /static/css/semantic.css?v=89891814f6cd49709dd18aedab380de3 (127.0.0.1) 15.62ms 2018-12-21 15:52:59
+[I 181221 16:52:59 application:140] 127.0.0.1 200 GET /static/css/semantic.css?v=89891814f6cd49709dd18aedab380de3 (127.0.0.1) 15.62ms 2018-12-21 15:52:59
+2018-12-21 16:52:59,043 - tornado.access - INFO - 127.0.0.1 200 GET /static/js/jquery.min.js?v=8718a315f515e7152aa01dcf9bd2a4ac (127.0.0.1) 0.00ms 2018-12-21 15:52:59
+[I 181221 16:52:59 application:140] 127.0.0.1 200 GET /static/js/jquery.min.js?v=8718a315f515e7152aa01dcf9bd2a4ac (127.0.0.1) 0.00ms 2018-12-21 15:52:59
+2018-12-21 16:52:59,043 - tornado.access - INFO - 127.0.0.1 200 GET /static/js/vue_main.js?v=cbe7f544c6b8235b0dc5d47587cd276c (127.0.0.1) 0.00ms 2018-12-21 15:52:59
+[I 181221 16:52:59 application:140] 127.0.0.1 200 GET /static/js/vue_main.js?v=cbe7f544c6b8235b0dc5d47587cd276c (127.0.0.1) 0.00ms 2018-12-21 15:52:59
+2018-12-21 16:52:59,066 - tornado.access - INFO - 127.0.0.1 200 GET /static/js/semantic.js?v=d186458c18fd05c97241c788f4dc831a (127.0.0.1) 23.15ms 2018-12-21 15:52:59
+[I 181221 16:52:59 application:140] 127.0.0.1 200 GET /static/js/semantic.js?v=d186458c18fd05c97241c788f4dc831a (127.0.0.1) 23.15ms 2018-12-21 15:52:59
+2018-12-21 16:52:59,298 - tornado.access - INFO - 127.0.0.1 200 GET /static/images/pow_logo_128.png?v=c8b9061b1bd47836443e2dcf71f9bd22 (127.0.0.1) 15.62ms 2018-12-21 15:52:59
+[I 181221 16:52:59 application:140] 127.0.0.1 200 GET /static/images/pow_logo_128.png?v=c8b9061b1bd47836443e2dcf71f9bd22 (127.0.0.1) 15.62ms 2018-12-21 15:52:59
+2018-12-21 16:52:59,314 - tornado.access - INFO - 127.0.0.1 200 GET /static/images/pow_logo_128.png (127.0.0.1) 15.62ms 2018-12-21 15:52:59
+[I 181221 16:52:59 application:140] 127.0.0.1 200 GET /static/images/pow_logo_128.png (127.0.0.1) 15.62ms 2018-12-21 15:52:59
+2018-12-21 16:52:59,444 - tornado.access - WARNING - 127.0.0.1 404 GET /favicon.ico (127.0.0.1) 0.00ms 2018-12-21 15:52:59
+[W 181221 16:52:59 application:140] 127.0.0.1 404 GET /favicon.ico (127.0.0.1) 0.00ms 2018-12-21 15:52:59
+[I 181221 16:53:24 application:204] 127.0.0.1 None GET /vue 0.00ms 2018-12-21 15:53:24
+2018-12-21 16:53:24,159 - tornado.access - INFO - 127.0.0.1 200 GET /vue (127.0.0.1) 37.81ms 2018-12-21 15:53:24
+[I 181221 16:53:24 application:140] 127.0.0.1 200 GET /vue (127.0.0.1) 37.81ms 2018-12-21 15:53:24
+2018-12-21 16:53:24,306 - tornado.access - INFO - 127.0.0.1 200 GET /static/css/semantic.css?v=89891814f6cd49709dd18aedab380de3 (127.0.0.1) 15.63ms 2018-12-21 15:53:24
+[I 181221 16:53:24 application:140] 127.0.0.1 200 GET /static/css/semantic.css?v=89891814f6cd49709dd18aedab380de3 (127.0.0.1) 15.63ms 2018-12-21 15:53:24
+2018-12-21 16:53:24,306 - tornado.access - INFO - 127.0.0.1 200 GET /static/js/jquery.min.js?v=8718a315f515e7152aa01dcf9bd2a4ac (127.0.0.1) 0.00ms 2018-12-21 15:53:24
+[I 181221 16:53:24 application:140] 127.0.0.1 200 GET /static/js/jquery.min.js?v=8718a315f515e7152aa01dcf9bd2a4ac (127.0.0.1) 0.00ms 2018-12-21 15:53:24
+2018-12-21 16:53:24,306 - tornado.access - INFO - 127.0.0.1 200 GET /static/js/vue_main.js?v=cbe7f544c6b8235b0dc5d47587cd276c (127.0.0.1) 0.00ms 2018-12-21 15:53:24
+[I 181221 16:53:24 application:140] 127.0.0.1 200 GET /static/js/vue_main.js?v=cbe7f544c6b8235b0dc5d47587cd276c (127.0.0.1) 0.00ms 2018-12-21 15:53:24
+2018-12-21 16:53:24,322 - tornado.access - INFO - 127.0.0.1 200 GET /static/js/semantic.js?v=d186458c18fd05c97241c788f4dc831a (127.0.0.1) 15.63ms 2018-12-21 15:53:24
+[I 181221 16:53:24 application:140] 127.0.0.1 200 GET /static/js/semantic.js?v=d186458c18fd05c97241c788f4dc831a (127.0.0.1) 15.63ms 2018-12-21 15:53:24
+2018-12-21 16:53:24,512 - tornado.access - INFO - 127.0.0.1 200 GET /static/images/pow_logo_128.png?v=c8b9061b1bd47836443e2dcf71f9bd22 (127.0.0.1) 3.00ms 2018-12-21 15:53:24
+[I 181221 16:53:24 application:140] 127.0.0.1 200 GET /static/images/pow_logo_128.png?v=c8b9061b1bd47836443e2dcf71f9bd22 (127.0.0.1) 3.00ms 2018-12-21 15:53:24
+2018-12-21 16:53:24,516 - tornado.access - INFO - 127.0.0.1 200 GET /static/images/pow_logo_128.png (127.0.0.1) 3.00ms 2018-12-21 15:53:24
+[I 181221 16:53:24 application:140] 127.0.0.1 200 GET /static/images/pow_logo_128.png (127.0.0.1) 3.00ms 2018-12-21 15:53:24
+2018-12-21 16:53:24,643 - tornado.access - WARNING - 127.0.0.1 404 GET /favicon.ico (127.0.0.1) 4.50ms 2018-12-21 15:53:24
+[W 181221 16:53:24 application:140] 127.0.0.1 404 GET /favicon.ico (127.0.0.1) 4.50ms 2018-12-21 15:53:24

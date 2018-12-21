@@ -1,0 +1,32 @@
+{% extends "base.sui" %}
+
+{% block include_css %}
+
+{% end %}
+
+
+
+{% block document_ready %}
+
+{% end %}
+
+{% block js %}
+
+{% end %}
+
+
+{% block content %} 
+<!-- Conflict on template of Tornado and Vue -->
+<!-- See: https://stackoverflow.com/questions/51738763/conflict-on-template-of-tornado-and-vue -->
+<div id="app">
+    <h1>{{!product}}</h1>
+    <h2>[[product]]</h2>
+</div>
+
+{% end %}
+
+
+{% block include_js %}
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="{{ static_url("js/vue_main.js")}}"></script>
+{% end %}
